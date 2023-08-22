@@ -1,0 +1,86 @@
+.container {
+  border-radius: 1.25rem;
+  background-color: #fff;
+  padding: 1.25rem;
+}
+.titlecontainer {
+  vertical-align: middle;
+  display: flex;
+}
+.image {
+  width: 52px;
+  height: 52px;
+  background-color: #e7e9df;
+  border-radius: 0.5rem;
+}
+.textcontainer {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  grid-column-start: 2;
+  width: 100%;
+}
+.title {
+  list-style: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  min-height: 1.25rem;
+  background-color: #e7e9df;
+}
+.comp_name {
+  margin-top: 0.5rem;
+  list-style-type: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  min-height: 1rem;
+  background-color: #e7e9df;
+}
+.job_desc {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  min-height: 4rem;
+  background-color: #e7e9df;
+}
+
+.box3 li {
+  list-style: none;
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  min-height: 1rem;
+  background-color: #e7e9df;
+}
+.box4 {
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+}
+.box4 li {
+  list-style: none;
+  width: 32%;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  min-height: 1.25rem;
+  background-color: #e7e9df;
+}
+.button {
+  padding: 1rem;
+}
+.image,
+.title,
+.comp_name,
+.job_desc,
+.boxli,
+.button {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(72, 19%, 89%);
+  }
+  100% {
+    background-color: hsl(72, 19%, 100%);
+  }
+}

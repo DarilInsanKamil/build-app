@@ -1,0 +1,152 @@
+.col {
+  grid-column: col-start 1 / span 3;
+}
+.col2 {
+  grid-column: col-start 4 / span 3;
+}
+.uploadWrapper {
+  grid-column: col-start 4 / span 6;
+}
+.colContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, [col-start] 1fr);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  padding: 40px 0px;
+  transition: all 1s ease-in;
+}
+.container label {
+  font-size: 14px;
+}
+.inputGroup {
+  width: 100%;
+  margin-left: 0.75rem;
+}
+.titleinput,
+.cityinput,
+.nameinput,
+.descinput,
+.qualinput,
+.salmaxinput,
+.salmininput,
+.typeinput,
+.imageinput,
+.tenureinput {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 10px 8px;
+  outline: none;
+  background-color: #e7e9df;
+  border: 0px solid transparent;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.titleinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.cityinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.nameinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.descinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.qualinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.salmaxinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.salmininput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.typeinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.imageinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.tenureinput:focus {
+  box-shadow: 0px 0px 4px 0px rgba(37, 99, 235, 0.25);
+}
+.titlelabel,
+.citylabel,
+.namelabel,
+.desclabel,
+.quallabel,
+.salmaxlabel,
+.salminlabel,
+.typelabel,
+.imagelabel,
+.tenurelabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.jobtitle,
+.compname,
+.compcity,
+.salmin,
+.salmax,
+.jobdesc,
+.jobqual,
+.jobtenure,
+.jobtype {
+  margin-bottom: 1rem;
+}
+
+.imagecomp {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.imagecomp img {
+  border-radius: 0.25rem;
+}
+.uploadWrapper h3 {
+  margin-bottom: 1.25rem;
+  font-family: "Nohemi", sans-serif;
+  font-size: 1.75rem;
+}
+.statusWrapper p {
+  margin-bottom: 1rem;
+}
+.status1 {
+  margin-bottom: 0.25rem;
+}
+.status1 label {
+  margin-left: 0.25rem;
+}
+.btnSub {
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 0.5rem;
+  border: 0px solid transparent;
+  background-color: #2563eb;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+  grid-template-columns: repeat(6, [col-start] 1fr);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  }
+  .col {
+    grid-column: col-start 1 / span 6;
+  }
+  .col2 {
+    grid-column: col-start 1 / span 6;
+  }
+  .uploadWrapper {
+    grid-column: col-start 1 / span 6;
+  }
+}

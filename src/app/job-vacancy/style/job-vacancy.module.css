@@ -1,0 +1,77 @@
+.container {
+  display: grid;
+  font-family: var(--font-pjs);
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 20px;
+  background-color: #f3f5eb;
+  padding: 20px 0px 20px 0px;
+  transition: all 1s ease-in;
+}
+.sidebar {
+  grid-column: col-start 2 / span 3;
+}
+.main {
+  grid-column: col-start 5 / span 6;
+}
+.listJobRow {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  transition: all 1s ease-in-out;
+}
+
+.filterMbl {
+  display: none;
+}
+.filterPop {
+  display: none;
+}
+.filterPop1 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .filterBar {
+    display: none;
+  }
+  .main {
+    grid-column: col-start 1 / span 12;
+    padding: 12px;
+  }
+  .listJobRow {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .filterMbl {
+    display: inline;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 40px;
+    text-align: center;
+    border: 0px;
+    background-color: #dbeafe;
+    color: #4b5563;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .filterMbl img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .filterPop {
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    padding: 20px;
+    display: inline;
+    transition: all 0.2s ease-in-out;
+  }
+}

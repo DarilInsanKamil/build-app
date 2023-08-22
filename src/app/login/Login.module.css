@@ -1,0 +1,83 @@
+.title {
+  font-family: Nohemi-bold, "san-serif";
+}
+.instruction {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.form_login_layout {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+}
+
+.password_field {
+  border: 1px solid #8b7e74;
+  justify-content: space-between;
+  display: flex;
+  padding: 0px 8px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.password {
+  border: 0px solid transparent;
+  outline-width: 0;
+  margin-right: 4px;
+  width: 466px;
+  padding: 4px 0px;
+  height: 40px;
+}
+.email_field {
+  border: 1px solid #8b7e74;
+  padding: 8px;
+  border-radius: 4px;
+  outline-width: 0;
+  height: 41.6px;
+}
+.create_acc {
+  color: #3b82f6;
+}
+.form_card {
+  border-radius: 8px;
+  width: 466px;
+}
+.form_field {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_field {
+  margin: 20px 0px 4px 0px;
+  font-weight: 700;
+}
+.button_login {
+  margin-top: 20px;
+  width: 100%;
+  height: 41.6px;
+  border: 0px;
+  background-color: #1d4ed8;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+}
+.terms {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.error_field {
+  background-color: #f9f9f9;
+  font-size: 12px;
+  color: #8b7e74;
+  padding: 14px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .form_card {
+    width: 90%;
+    padding: 40px 20px;
+  }
+}
